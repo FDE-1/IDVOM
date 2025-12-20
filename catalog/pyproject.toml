@@ -1,0 +1,17 @@
+[project]
+name = "catalog"
+version = "0.1.0"
+description = "Catalog service"
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "sqlalchemy>=2.0",
+  "psycopg[binary]>=3.1",
+  "prometheus-client>=0.20",
+  "pydantic>=2.6",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
